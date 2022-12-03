@@ -1,16 +1,28 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: kangjeonghui
-  Date: 2022/12/02
-  Time: 9:50 AM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-  $END$
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title> 새글쓰기 </title>
+</head>
+<body>
+
+<h1>새글쓰기</h1>
+<form action="addok" method="post" >
+  <table id="edit">
+    <tr><td>제목:</td><td><input type="text" name="title"/></td></tr>
+    <tr><td>글쓴이:</td><td><input type="text" name="writer"/></td></tr>
+    <tr><td>내용:</td><td><textarea cols="50" rows="5" name="content"></textarea></td></tr>
+    <tr><td>카테고리:</td><td><input type="text" name="category"/></td></tr>
+    <tr><td>주제:</td><td><input type="text" name="topic"/></td></tr>
+
+    <%--<tr><td>Content:</td><td><textarea cols="50" rows="5" name="content"></textarea></td></tr>--%>
+<%--    <tr><td><a href="posts.jsp">View All Records</a></td><td align="right"><input type="submit" value="Add Post"/></td></tr>--%>
+  </table>
+<%--  <button type="button" onclick="location.href='list'">목록보기</button>--%>
+  <button type="submit">등록하기</button>
+</form>
+
+</body>
 </html>
